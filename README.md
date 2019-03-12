@@ -1,25 +1,47 @@
-# README
+# Kitty Kard Matching
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+## Project Summary
 
-* Ruby version
+Kitty Kard Matching is a game for fans of cats and the old card game Memory. Users enter their name and then click on cards to "flip" them, revealing pictures of cats. Users try to complete matches as quickly as possible. A timer begins at the start of the game and stops upon completion of the final match. The user's time is their final score and is then displayed among the best times.
 
-* System dependencies
 
-* Configuration
+## Installing
 
-* Database creation
+Before beginning with the installing of the front end of this application, you should first set up the back end.
 
-* Database initialization
+Fork and clone this repo, then:
 
-* How to run the test suite
+```
+cd matcher_backend
+rails db:create && rails db:migrate
+rails db:seed
+rails s
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+Once the back end is set up, you can fork and clone the front end.
 
-* Deployment instructions
+Be sure the back end is up and running first. Once the front end is installed, follow the instructions to start up front end:
 
-* ...
-# matcher_backend
+```
+cd matcher_frontend
+open index.html
+```
+
+This will display the game's page and it will be ready to play.
+
+
+## Link to Back End Repo
+
+https://github.com/eric-klimowich/matcher_frontend
+
+
+## Built With
+
+* [Ruby]
+* [Ruby on Rails]
+
+
+## Link to Video Demo
+
+https://youtu.be/UeN8Hmvk0MU
